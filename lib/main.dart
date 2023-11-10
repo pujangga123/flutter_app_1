@@ -22,10 +22,12 @@ class MainApp extends StatelessWidget {
           Container(
               padding: const EdgeInsets.fromLTRB(0, 70, 0, 0),
               alignment: Alignment.topCenter,
-              height: 200,
+              height: 240,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  const Text('En Tay',
+                      style: TextStyle(fontSize: 25, color: Colors.white)),
                   ElevatedButton(
                       onPressed: () {
                         Navigator.push(
@@ -41,7 +43,6 @@ class MainApp extends StatelessWidget {
                       child: const Text('Login',
                           style:
                               TextStyle(fontSize: 15, color: Colors.black87))),
-                  const Spacer(),
                   ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(

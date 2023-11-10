@@ -14,23 +14,31 @@ class LoginPage extends StatelessWidget {
         Container(
             padding: const EdgeInsets.fromLTRB(30, 70, 30, 0),
             width: 300,
-            height: 330,
+            height: 300,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const Text('Username'),
+                const Text('Username',
+                    style: TextStyle(color: Colors.white, fontSize: 15)),
                 const TextField(
+                  style: TextStyle(color: Colors.black),
                   decoration: InputDecoration(
+                    fillColor: Colors.white,
+                    filled: true,
                     border: OutlineInputBorder(),
-                    hintText: 'Enter a search term',
+                    hintText: 'Tulis nama user',
                   ),
                 ),
                 const Spacer(),
-                const Text('Password'),
+                const Text('Password',
+                    style: TextStyle(color: Colors.white, fontSize: 15)),
                 const TextField(
+                  obscureText: true,
                   decoration: InputDecoration(
+                    fillColor: Colors.white,
+                    filled: true,
                     border: OutlineInputBorder(),
-                    hintText: 'Enter a search term',
+                    hintText: 'Password',
                   ),
                 ),
                 const Spacer(),
