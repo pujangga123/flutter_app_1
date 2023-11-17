@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'homepage.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // const snackBar = SnackBar(
+    //   content: Text('Welcome to the CodewithHussain.com'),
+    // );
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Login Page'),
@@ -43,7 +48,14 @@ class LoginPage extends StatelessWidget {
                 ),
                 const Spacer(),
                 ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      //ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomePage()),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white70,
                         fixedSize: const Size(130, 50),
